@@ -1,4 +1,4 @@
-from flask import Flask , template_rendered
+from flask import Flask , template_rendered, jsonify
 
 app = Flask(__name__)
 
@@ -8,7 +8,8 @@ def print():
 
 @app.route("/data")
 def hello_world():
-    return {'name' : 'Ayush Barman' , 'College' : 'IIT ISM Dhanbad'}
+    result =  {'name' : 'Ayush Barman' , 'College' : 'IIT ISM Dhanbad'}
+    return jsonify({"status" : True ,  "message" : "Found", "data" : result})
 
 if __name__ == "__main__":
-    app.run(debug=True , port = 8000)
+    app.run(debug=True , host='0.0.0.0' , port = 8000)
