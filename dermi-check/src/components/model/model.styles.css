@@ -1,0 +1,15 @@
+.box-container:hover{
+    backdrop-filter: blur("100px");
+}
+
+.disease-display{
+    height: 60vh !important;
+    overflow-y: hidden !important;
+}
+
+@media (max-width : 991px){
+    .disease-display{
+        width:  93vw !important;
+        margin-left: 3% !important;
+    }
+}

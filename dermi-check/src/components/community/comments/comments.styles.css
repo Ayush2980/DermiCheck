@@ -1,0 +1,38 @@
+.card-cont-2 {
+  margin-top: 10% !important;
+  margin-bottom: 10% !important;
+}
+@media screen and (max-width: 780px) {
+  .card-cont-2 {
+    margin-left: 4%;
+    margin-top: -12%;
+  }
+}
+.comment-thread {
+  height: 100% !important;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  width: 100% !important;
+}
+textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 2.8%;
+  border-radius: 15px;
+  border: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+textarea:placeholder-shown {
+  border: none !important;
+}
+.send-btn {
+  border-radius: 15px;
+  height: 80%;
+  margin-left: 7%;
+  margin-top: 1.8%;
+  right: 0%;
+}
